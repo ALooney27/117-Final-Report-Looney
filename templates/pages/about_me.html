@@ -1,0 +1,82 @@
+{% extends 'base.html' %}
+
+{% block title %} About me {% endblock title %}
+{% load static %}
+
+{% block content %}
+
+<section class="about-section">
+    <div class="img-container center">
+      <img id="about-img" src="{% static '/img/logo-png.png' %}" alt="" />
+    </div>
+
+    <div class="description-container center">
+      <div class="center" style="flex-direction: column">
+        <h1>Backend Developer</h1>
+        <h2>Anthony Looney</h2>
+      </div>
+
+      <p>
+        Software development professional with experience in developing and
+        designing web applications using HTML, CSS, JavaScript, Python, and
+        React and offering skills in SQL. Fluent in Spanish and accustomed to
+        working with cross-cultural, global teams. A hardworking and
+        passionate job seeker with strong organizational skills eager and
+        ready to help team achieve company goals.
+      </p>
+
+      <div class="skills-list center">
+        <h2>Skills</h2>
+
+        <div class="skills center">
+          <label> CSS </label>
+          <label> HTML </label>
+          <label> JavaScript </label>
+          <label> React </label>
+          <label> SQL </label>
+          <label> Python </label>
+          <label> Linux </label>
+          <label> Django </label>
+          <label> C# </label>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="projects-section center">
+    <h2>Projects</h2>
+
+    <div id="projects-list"></div>
+  </section>
+
+  <section class="experience-section center">
+    <h2>Experience/Education</h2>
+
+    <div id="experiences-list"></div>
+  </section>
+
+  <section class="contact-section center">
+    <h2>Contact Me</h2>
+
+    <form id="emailForm">
+      <input type="text" id="name" placeholder="Name" required /> <br />
+      <input type="email" id="email" placeholder="Email" required /> <br />
+      <input type="text" id="subject" placeholder="Subject" />> <br />
+      <textarea
+        id=""
+        cols="30"
+        rows="4"
+        placeholder="Message"
+        required
+      ></textarea>
+      <br />
+
+      <div class="form-buttons">
+        <button class="primary-button" type="submit">Send Email</button>
+        <button class="secondary-button" type="button">Reset</button>
+      </div>
+    </form>
+  </section>
+
+<h1>About me section!</h1>
+
+{% endblock content %}
